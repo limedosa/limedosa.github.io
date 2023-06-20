@@ -1,0 +1,119 @@
+#socialLinks {
+    text-align: center;
+}
+
+#socialLinks img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+.icons:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    opacity:.87;
+ 
+    
+}
+/* skills css */
+.ulSkills {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.liSkills {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #ECECEC;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.liSkills:hover {
+    background-color: #A0A0A0;
+    transform: scale(1.1);
+}
+
+/* clases css */
+
+body {
+    background-color: #222;
+    color: #fff;
+  }
+
+  .ulClasses {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .liClasses {
+    /* list-style-type: disc; */
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #333;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+
+  .liClasses:before {
+    content: "\2022";
+    font-size: 10px;
+    margin-right: 5px;
+    color: #fff;
+  }
+
+  .liClasses:hover {
+    transform: scale(1.05);
+    background-color: #444;
+    cursor: pointer;
+  }
+
+  .resizable-iframe {
+    resize: both;
+    overflow: auto;
+}
+
+.about .btn--outline {
+  margin-right: 1em;
+}
+.btn--outline {
+  color: var(--clr-primary);
+  border: 2px solid var(--clr-primary);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.btn {
+  display: block;
+  cursor: pointer;
+  padding: 0.8em 1.4em;
+  font-weight: 500;
+  font-size: .9rem;
+  text-transform: lowercase;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out,-webkit-transform .2s ease-in-out;
+}
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  box-shadow: none;
+  box-sizing: border-box;
+}
