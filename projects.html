@@ -4,8 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
+  <title>Linda Dominguez</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="js" href="main.js">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -36,47 +37,159 @@
   </nav>
   <div class="container" style="margin-top:30px">
     <div class="row">
-        <div class="col-sm-8">
-          <h1>Projects</h1>
-          <br>
-          <h3>Stats:</h3>
-          <img
-            src="https://github-readme-stats.vercel.app/api?username=limedosa&amp;show_icons=true&amp;locale=en&amp;theme=vue&amp;hide=prs,issues"
-            alt="limedosa">
-          <img
-            src="https://github-readme-stats.vercel.app/api/top-langs?username=limedosa&amp;show_icons=true&amp;locale=en&amp;langs_count=6&amp;layout=compact&amp;theme=vue&amp"
-            alt="limedosa">
-            <hr class="d-sm-none">
-        </div>
-        <div class="col-sm-5">
-          <h3>Projects:</h3>
-          <iframe src="https://fathersday2023.glitch.me" class="resizable-iframe" ></iframe>
-          <hr class="d-sm-none">
-        </div>
+      <div class="col-sm-8">
+        <h1>Projects &amp; Statistics</h1>
+        <br>
+        <h3>Stats:</h3>
+        <img
+          src="https://github-readme-stats.vercel.app/api?username=limedosa&amp;show_icons=true&amp;locale=en&amp;theme=vue&amp;hide=prs,issues"
+          alt="limedosa">
+        <img
+          src="https://github-readme-stats.vercel.app/api/top-langs?username=limedosa&amp;show_icons=true&amp;locale=en&amp;langs_count=6&amp;layout=compact&amp;theme=vue&amp"
+          alt="limedosa">
+        <hr class="d-sm-none">
+        <p></p>
+        <p>
+      </div>
+      <p></p>
+      <div class="col-sm-5">
+        <h3>Projects:</h3>
+        <hr class="d-sm-none">
       </div>
     </div>
   </div>
-
-
-      
+  </div>
 
 
 
+  <div class="projects__grid">
+    <div class="project">
+      <h3>Bechdel Gender Imbalance</h3>
+      <p class="project__description">Analyzed gender imbalance in 50 Hollywood movies using diverse data structures and quantitative tests designed by women in the film industry.</p>
+      <button class="toggleButton" onclick="toggleIframe('embeddedProject1')"style="text-decoration:underline;">View Embedded Project</button>
+      <div id="iframeContainer1">
+        <iframe id="embeddedProject1" src="https://bechdel-project.glitch.me" style="display: none;"></iframe>
+      </div>
+      <ul class="project__stack">
+        <li class="liClasses">Java</li>
+        <li class="liClasses">Data Structures</li>
+        <li class="liClasses">BFS</li>
+        <li class="liClasses">Algorithms</li>
+      </ul>
+      <a href="https://github.com/limedosa/Bechdel-Test-Gender-Imbalance-Project" target="_blank" rel="noopener noreferrer" aria-label="source code" class="link link--icon"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path>
+        </svg></a>
+    </div>
+  
+    <div class="project">
+      <h3>AllChat</h3>
+      <p class="project__description">Designed and implemented a chat app with the ability to text users, like and comment on posts, as well as a feed. Supports image uploads.</p>
+      <button class="toggleButton" onclick="toggleIframe('embeddedProject2')" style="text-decoration:underline;">View Embedded Project</button>
+      <div id="iframeContainer2">
+        <iframe id="embeddedProject2" src="https://allchat.glitch.me" style="display: none;"></iframe>
+      </div>
+      <ul class="project__stack">
+        <li class="liClasses">Vue JS</li>
+        <li class="liClasses">Javascript</li>
+        <li class="liClasses">HTML</li>
+        <li class="liClasses">CSS</li>
+        <li class="liClasses">UI</li>
+        <li class="liClasses">UX</li>
+        <li class="liClasses">Figma</li>
+        <li class="liClasses">Graffiti</li>
+        <li class="liClasses">Web Development</li>
+      </ul>
+      <a href="https://github.com/designftw/hw11-limedosa/tree/master/hw12/chat%20app" target="_blank" rel="noopener noreferrer" aria-label="source code" class="link link--icon"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path>
+      </svg></a>
+    </div>
+  
+    <div class="project">
+      <h3>Virtual AI Assistant</h3>
+      <h4><em>In Progress</em></h4>
+      <p class="project__description">Designed a virtual AI assistant utilizing core design principles.</p>
+      <button class="toggleButton" onclick="toggleIframe('embeddedProject3')"style="text-decoration:underline;">View Embedded Project</button>
+      <div id="iframeContainer3">
+        <iframe src="ai.svg" frameborder="0" width="1%" height="-10%" allowfullscreen="false" mozallowfullscreen="false" webkitallowfullscreen="false"></iframe>
+      </div>
+
+      <ul class="project__stack">
+        <li class="liClasses">UI</li>
+        <li class="liClasses">UX</li>
+      </ul>
+      <a href="https://github.com/limedosa/Bechdel-Test-Gender-Imbalance-Project" target="_blank" rel="noopener noreferrer" aria-label="source code" class="link link--icon"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path>
+        </svg></a>
+    </div>
+ 
+    <div class="project">
+      <h3>Expenses App</h3>
+      <p class="project__description">Implemented an expenses app that allows for payments to be divided by two people.</p>
+      <button class="toggleButton" onclick="toggleIframe('embeddedProject4')" style="text-decoration:underline;">View Embedded Project</button>
+      <div id="iframeContainer4">
+        <iframe id="embeddedProject4" src="https://expenses-app.glitch.me" style="display: none;"></iframe>
+      </div>
+      <ul class="project__stack">
+        <li class="liClasses">Javascript</li>
+        <li class="liClasses">HTML</li>
+        <li class="liClasses">CSS</li>
+        <li class="liClasses">JSON</li>
+      </ul>
+      <a href="https://github.com/designftw/hw2-limedosa/tree/master/expenses" target="_blank" rel="noopener noreferrer" aria-label="source code" class="link link--icon"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path>
+      </svg></a>
+    </div>
     
-    
+  </div>
+  
+
+  
   <div id="socialLinks" class="social-links sqs-svg-icon--list" data-content-field="connected-accounts">
     <a href="https://www.linkedin.com/in/linda-dominguez" target="_blank" style="display:inline-block">
       <img src="media/p2.png" class="icons">
     </a>
-    <a href="https://github.com/limedosa" target="_blank" class="sqs-svg-icon--wrapper twitter"
-      style="display:inline-block">
+    <a href="https://github.com/limedosa" target="_blank" class="sqs-svg-icon--wrapper twitter" style="display:inline-block">
       <img src="media/p3.png" class="icons">
     </a>
-    <a href="mailto:ld104@wellesley.edu" target="_blank" class="sqs-svg-icon--wrapper email"
-      style="display:inline-block">
+    <a href="mailto:ld104@wellesley.edu" target="_blank" class="sqs-svg-icon--wrapper email" style="display:inline-block">
       <img src="media/p1.png" class="icons">
     </a>
   </div>
+  
+  <script>
+    function toggleIframe(iframeId) {
+      var iframe = document.getElementById(iframeId);
+      var container = document.getElementById("iframeContainer" + iframeId.slice(-1));
+      
+      if (iframe.style.display === "none") {
+        iframe.style.display = "block";
+        container.style.paddingBottom = "40%";
+      } else {
+        iframe.style.display = "none";
+        container.style.paddingBottom = "0%";
+      }
+    }
+    </script>
+    
+ 
+  
+  <!-- this is for translations at the bottom of the page! -->
+  <script type="text/javascript">
+    var pageTranslation = document.createElement('div');
+    pageTranslation.id = 'google_translate_element';
+
+    document.body.appendChild(pageTranslation);
+
+    var googleTranslateScript = document.createElement('script');
+    googleTranslateScript.type = 'text/javascript';
+    googleTranslateScript.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+
+    document.body.appendChild(googleTranslateScript);
+
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL }, 'google_translate_element');
+    }
+  </script>
 
 </body>
 
