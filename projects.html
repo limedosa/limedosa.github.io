@@ -53,7 +53,9 @@
       </div>
       <p></p>
       <div class="col-sm-5">
-        <h3>Projects:</h3>
+        <h3 >Projects:</h3>
+        <p ></p>
+        <h1></h1>
         <hr class="d-sm-none">
       </div>
     </div>
@@ -61,16 +63,18 @@
   </div>
 
 
-
-  <div class="projects__grid">
+  <h1 style="position: relative; bottom:155% !important"></h1>
+  <div class="projectsGrid">
+    
     <div class="project">
+      
       <h3>Bechdel Gender Imbalance</h3>
-      <p class="project__description">Analyzed gender imbalance in 50 Hollywood movies using diverse data structures and quantitative tests designed by women in the film industry.</p>
+      <p>Analyzed gender imbalance in 50 Hollywood movies using diverse data structures and quantitative tests designed by women in the film industry.</p>
       <button class="toggleButton" onclick="toggleIframe('embeddedProject1')"style="text-decoration:underline;">View Embedded Project</button>
       <div id="iframeContainer1">
         <iframe id="embeddedProject1" src="https://bechdel-project.glitch.me" style="display: none;"></iframe>
       </div>
-      <ul class="project__stack">
+      <ul class="projectUl">
         <li class="liClasses">Java</li>
         <li class="liClasses">Data Structures</li>
         <li class="liClasses">BFS</li>
@@ -83,12 +87,12 @@
   
     <div class="project">
       <h3>AllChat</h3>
-      <p class="project__description">Designed and implemented a chat app with the ability to text users, like and comment on posts, as well as a feed. Supports image uploads.</p>
+      <p>Designed and implemented a chat app with the ability to text users, like and comment on posts, as well as a feed. Supports image uploads.</p>
       <button class="toggleButton" onclick="toggleIframe('embeddedProject2')" style="text-decoration:underline;">View Embedded Project</button>
       <div id="iframeContainer2">
         <iframe id="embeddedProject2" src="https://allchat.glitch.me" style="display: none;"></iframe>
       </div>
-      <ul class="project__stack">
+      <ul class="projectUl">
         <li class="liClasses">Vue JS</li>
         <li class="liClasses">Javascript</li>
         <li class="liClasses">HTML</li>
@@ -98,6 +102,7 @@
         <li class="liClasses">Figma</li>
         <li class="liClasses">Graffiti</li>
         <li class="liClasses">Web Development</li>
+        <li class="liClasses">Vanilla JS</li>
       </ul>
       <a href="https://github.com/designftw/hw11-limedosa/tree/master/hw12/chat%20app" target="_blank" rel="noopener noreferrer" aria-label="source code" class="link link--icon"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
         <path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path>
@@ -107,13 +112,12 @@
     <div class="project">
       <h3>Virtual AI Assistant</h3>
       <h4><em>In Progress</em></h4>
-      <p class="project__description">Designed a virtual AI assistant utilizing core design principles.</p>
+      <p >Designed a virtual AI assistant utilizing core design principles.</p>
       <button class="toggleButton" onclick="toggleIframe('embeddedProject3')"style="text-decoration:underline;">View Embedded Project</button>
-      <div id="iframeContainer3">
-        <iframe src="ai.svg" frameborder="0" width="1%" height="-10%" allowfullscreen="false" mozallowfullscreen="false" webkitallowfullscreen="false"></iframe>
+      <div id="iframeContainer2">
+        <iframe id="embeddedProject3" src="ai.svg" style="display: none;"></iframe>
       </div>
-
-      <ul class="project__stack">
+      <ul class="projectUl">
         <li class="liClasses">UI</li>
         <li class="liClasses">UX</li>
       </ul>
@@ -121,15 +125,17 @@
           <path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path>
         </svg></a>
     </div>
- 
+ <!-- </div>
+ <h2>Small Projects</h2>
+ <div class="projectsGrid"> -->
     <div class="project">
       <h3>Expenses App</h3>
-      <p class="project__description">Implemented an expenses app that allows for payments to be divided by two people.</p>
+      <p >Implemented an expenses app that allows for payments to be divided by two people.</p>
       <button class="toggleButton" onclick="toggleIframe('embeddedProject4')" style="text-decoration:underline;">View Embedded Project</button>
       <div id="iframeContainer4">
         <iframe id="embeddedProject4" src="https://expenses-app.glitch.me" style="display: none;"></iframe>
       </div>
-      <ul class="project__stack">
+      <ul class="projectUl">
         <li class="liClasses">Javascript</li>
         <li class="liClasses">HTML</li>
         <li class="liClasses">CSS</li>
@@ -139,7 +145,26 @@
         <path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path>
       </svg></a>
     </div>
+
     
+    <div class="project">
+      <h3>Airbnb Dataset Modeling</h3>
+      <p > Analysis on Airbnb NYC "listings" data set. </p>
+      <button class="toggleButton" onclick="toggleIframe('embeddedProject5')" style="text-decoration:underline;">View Embedded Project</button>
+      <div id="iframeContainer5">
+        <iframe id="embeddedProject5" src="https://machine-learning-ld.glitch.me" style="display: none;"></iframe>
+      </div>
+      <ul class="projectUl">
+        <li class="liClasses">Jupyter</li>
+        <li class="liClasses">python</li>
+        <li class="liClasses">pandas</li>
+        <li class="liClasses">numpy</li>
+        <li class="liClasses">seaborn</li>
+      </ul>
+      <a href="https://github.com/limedosa/Machine-Learning" target="_blank" rel="noopener noreferrer" aria-label="source code" class="link link--icon"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path>
+      </svg></a>
+    </div>
   </div>
   
 
