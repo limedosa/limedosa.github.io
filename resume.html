@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linda Dominguez - Resume</title>
+  <meta name="description" content="Resume of Linda Dominguez, AI Engineer and Full Stack Developer">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: 'rgb(147, 51, 234)',
+              foreground: 'rgb(250, 250, 250)',
+            },
+            secondary: {
+              DEFAULT: 'rgb(15, 23, 42)',
+              foreground: 'rgb(250, 250, 250)',
+            },
+            background: 'var(--background)',
+            foreground: 'var(--foreground)',
+            muted: {
+              DEFAULT: 'var(--muted)',
+              foreground: 'var(--muted-foreground)',
+            },
+            card: {
+              DEFAULT: 'var(--card)',
+              foreground: 'var(--card-foreground)',
+            },
+            border: 'var(--border)',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    :root {
+      --background: 0 0% 100%;
+      --foreground: 224 71% 4%;
+      --card: 0 0% 100%;
+      --card-foreground: 224 71% 4%;
+      --popover: 0 0% 100%;
+      --popover-foreground: 224 71% 4%;
+      --primary: 262 83.3% 57.8%;
+      --primary-foreground: 210 40% 98%;
+      --secondary: 210 40% 96.1%;
+      --secondary-foreground: 222.2 47.4% 11.2%;
+      --muted: 210 40% 96.1%;
+      --muted-foreground: 215.4 16.3% 46.9%;
+      --accent: 210 40% 96.1%;
+      --accent-foreground: 222.2 47.4% 11.2%;
+      --destructive: 0 84.2% 60.2%;
+      --destructive-foreground: 210 40% 98%;
+      --border: 214.3 31.8% 91.4%;
+      --input: 214.3 31.8% 91.4%;
+      --ring: 262 83.3% 57.8%;
+      --radius: 0.5rem;
+    }
+
+    .dark {
+      --background: 224 71% 4%;
+      --foreground: 213 31% 91%;
+      --card: 224 71% 4%;
+      --card-foreground: 213 31% 91%;
+      --popover: 224 71% 4%;
+      --popover-foreground: 213 31% 91%;
+      --primary: 262 83.3% 57.8%;
+      --primary-foreground: 210 40% 98%;
+      --secondary: 222.2 47.4% 11.2%;
+      --secondary-foreground: 210 40% 98%;
+      --muted: 223 47% 11%;
+      --muted-foreground: 215.4 16.3% 56.9%;
+      --accent: 216 34% 17%;
+      --accent-foreground: 210 40% 98%;
+      --destructive: 0 63% 31%;
+      --destructive-foreground: 210 40% 98%;
+      --border: 216 34% 17%;
+      --input: 216 34% 17%;
+      --ring: 262 83.3% 57.8%;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: hsl(var(--background));
+      color: hsl(var(--foreground));
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .card {
+      background-color: hsl(var(--card));
+      color: hsl(var(--card-foreground));
+      border: 1px solid hsl(var(--border));
+      border-radius: var(--radius);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius);
+      font-weight: 500;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      border: 1px solid hsl(var(--border));
+      color: hsl(var(--foreground));
+    }
+
+    @media print {
+      @page {
+        margin: 0.5in;
+      }
+
+      body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      header,
+      footer,
+      nav,
+      button {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="min-h-screen bg-background">
+    <header class="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur">
+      <div class="container flex h-14 items-center">
+        <a href="index.html" class="flex items-center gap-2 transition-all duration-200 hover:scale-105 hover:text-primary group">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-200 group-hover:-translate-x-1"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+          <span class="font-medium text-sm md:text-base">Back to Home</span>
+        </a>
+        <div class="ml-auto flex items-center gap-2">
+          <button id="theme-toggle" class="btn btn-outline p-2 rounded-md">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="moon hidden"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          </button>
+          <a href="resume.pdf" target="_blank" class="btn btn-outline p-2 rounded-md flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+            <span class="hidden md:inline">Download PDF</span>
+          </a>
+          <button class="btn btn-outline p-2 rounded-md flex items-center gap-2" onclick="window.print()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v8H6z"/></svg>
+            <span class="hidden md:inline">Print</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container py-6 md:py-8 px-4 md:px-6 max-w-4xl mx-auto">
+      <div class="card p-4 md:p-8 print:shadow-none print:border-none">
+        <div class="space-y-6 md:space-y-8 print:space-y-6">
+          <!-- Header -->
+          <div class="text-center border-b pb-4 print:pb-2">
+            <h1 class="text-2xl md:text-3xl font-bold">Linda Dominguez</h1>
+            <p class="text-muted-foreground mt-1 text-sm md:text-base">
+              (201) 496-1973 | dlinda@mit.edu | New York, NY 10028
+            </p>
+            <div class="flex justify-center gap-4 mt-2">
+              <a
+                href="https://www.linkedin.com/in/linda-dominguez/"
+                class="text-xs md:text-sm text-primary hover:underline"
+              >
+                LinkedIn
+              </a>
+              <a href="index.html" class="text-xs md:text-sm text-primary hover:underline">
+                Personal Website
+              </a>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div>
+            <h2 class="text-lg md:text-xl font-bold mb-3">Education</h2>
+            <div class="space-y-4">
+              <div>
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start">
+                  <h3 class="font-semibold text-sm md:text-base">Wellesley College</h3>
+                  <span class="text-xs md:text-sm">Wellesley, MA</span>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start">
+                  <p class="text-xs md:text-sm italic">B.A. in Psychology</p>
+                  <span class="text-xs md:text-sm">Sep. 2020 – May 2024</span>
+                </div>
+                <ul class="list-disc list-inside text-xs md:text-sm mt-1">
+                  <li>Relevant Courses: Data Structures, Computer Programming & Problem Solving, Stats, Java OOP</li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start">
+                  <h3 class="font-semibold text-sm md:text-base">Massachusetts Institute of Technology (MIT)</h3>
+                  <span class="text-xs md:text-sm">Cambridge, MA</span>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start">
+                  <p class="text-xs md:text-sm italic">
+                    Cross-registered in Computer Science, Machine Learning, Data Science
+                  </p>
+                  <span class="text-xs md:text-sm">Sep. 2022 – May 2024</span>
+                </div>
+                <ul class="list-disc list-inside text-xs md:text-sm mt-1">
+                  <li>
+                    Relevant Courses: Intro CS, Programming Fundamentals, Deep Learning, WebLab, Machine Learning,
+                    Software Systems for Data Science, Web Design
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience -->
+          <div>
+            <h2 class="text-lg md:text-xl font-bold mb-3">Experience</h2>
+            <div class="space-y-4">
+              <div>
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start">
+                  <h3 class="font-semibold text-sm md:text-base">
+                    AI Engineer, Jefferies Group LLC (via Widenet AI)
+                  </h3>
+                  <span class="text-xs md:text-sm">New York Metro</span>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start">
+                  <span class="text-xs md:text-sm"></span>
+                  <span class="text-xs md:text-sm">Feb. 2025 — Present</span>
+                </div>
+                <ul class="list-disc list-inside text-xs md:text-sm mt-1">
+                  <li>
+                    Partnered with Jefferies' CTO and engineering team to design and develop a document extraction
+                    system, reducing manual processing time and improving data accuracy.
+                  </li>
+                  <li>
+                    Conducted tests to evaluate optimal approach for data input, comparing OCR, direct file input to
+                    model, or both.
+                  </li>
+                  <li>Built UI and backend components using TypeScript and React, delivering seamless UX.</li>
+                  <li>
+                    Diagnosed system issues, optimized performance, and automated document processing & data
+                    validation.
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start">
+                  <h3 class="font-semibold text-sm md:text-base">Data Scientist, Fusion Alpha AI</h3>
+                  <span class="text-xs md:text-sm">New York, NY</span>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start">
+                  <span class="text-xs md:text-sm"></span>
+                  <span class="text-xs md:text-sm">July 2024 — Dec. 2024</span>
+                </div>
+                <ul class="list-disc list-inside text-xs md:text-sm mt-1">
+                  <li>
+                    Developed and optimized LSTM models to enhance ticker(stock) buy/sell signals, improving accuracy
+                    by 5%.
+                  </li>
+                  <li>
+                    Created and upkept data pipelines using AWS, MongoDB, and S3 to source, process, and store data.
+                  </li>
+                  <li>
+                    Automated data collection from various APIs and performed feature extraction for thematic
+                    analysis, informing targeted outreach strategies and improving CRM automation.
+                  </li>
+                  <li>
+                    Used MongoDB database for storing historical data and conducting analytics on large datasets.
+                  </li>
+                  <li>
+                    Developed and improved React-based system to automate email management using Gmail APIs, boosting
+                    operational efficiency by 30%.
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start">
+                  <h3 class="font-semibold text-sm md:text-base">
+                    Machine Learning Engineer Intern, Biointerphase
+                  </h3>
+                  <span class="text-xs md:text-sm">Remote</span>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start">
+                  <span class="text-xs md:text-sm"></span>
+                  <span class="text-xs md:text-sm">Sep. 2023 — Dec. 2023</span>
+                </div>
+                <ul class="list-disc list-inside text-xs md:text-sm mt-1">
+                  <li>
+                    Built random forest & NLP to predict bat population decline(97% accuracy) using timestamp &
+                    geolocation data.
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start">
+                  <h3 class="font-semibold text-sm md:text-base">Fellowship, Breakthrough Tech AI @ MIT</h3>
+                  <span class="text-xs md:text-sm">Cambridge, MA</span>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start">
+                  <span class="text-xs md:text-sm"></span>
+                  <span class="text-xs md:text-sm">June 2023 — April 2024</span>
+                </div>
+                <ul class="list-disc list-inside text-xs md:text-sm mt-1">
+                  <li>
+                    Received hands-on training in machine learning algorithms; earned ML Foundations certification.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projects -->
+          <div>
+            <h2 class="text-lg md:text-xl font-bold mb-3">Projects</h2>
+            <div class="space-y-4">
+              <div>
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start">
+                  <h3 class="font-semibold text-sm md:text-base">Low-cost Ensemble Training Framework</h3>
+                  <span class="text-xs md:text-sm">In Progress</span>
+                </div>
+                <ul class="list-disc list-inside text-xs md:text-sm mt-1">
+                  <li>
+                    Developed a low-cost ensemble framework for CIFAR-10, using pruning, BatchEnsemble, and
+                    distillation to reduce training time and memory usage.
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start">
+                  <h3 class="font-semibold text-sm md:text-base">
+                    Sentiment Analysis on Cryptocurrency Patterns
+                  </h3>
+                  <span class="text-xs md:text-sm">Feb. 2024 – May 2024</span>
+                </div>
+                <ul class="list-disc list-inside text-xs md:text-sm mt-1">
+                  <li>
+                    Developed LSTM & GRU models for Bitcoin price prediction using tweet sentiment & historical data.
+                  </li>
+                  <li>
+                    Used Alpaca API & NLTK for data extraction and sentiment analysis, boosting prediction accuracy.
+                  </li>
+                  <li>Architected data pipelines to automate real-time data collection and preprocessing.</li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start">
+                  <h3 class="font-semibold text-sm md:text-base">
+                    New York Botanical Gardens Image Classification
+                  </h3>
+                  <span class="text-xs md:text-sm">Jan. 2024 – April 2024</span>
+                </div>
+                <ul class="list-disc list-inside text-xs md:text-sm mt-1">
+                  <li>
+                    Developed a ResNet101V2-based model to classify 120,000+ plant and animal specimen images across
+                    10 categories with 97% accuracy.
+                  </li>
+                  <li>
+                    Optimized the data pipeline for preprocessing images using TensorFlow and Numpy, reducing training
+                    time by 25%.
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start">
+                  <h3 class="font-semibold text-sm md:text-base">HealthAssess: Web-based AI Health Tool</h3>
+                  <span class="text-xs md:text-sm">Feb. 2024</span>
+                </div>
+                <ul class="list-disc list-inside text-xs md:text-sm mt-1">
+                  <li>
+                    Flask health assessment tool using live heart rate data, integrating GPT-4 API for real-time
+                    analysis & prediction.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills -->
+          <div>
+            <h2 class="text-lg md:text-xl font-bold mb-3">Skills</h2>
+            <ul class="list-none text-xs md:text-sm space-y-2">
+              <li>
+                <span class="font-semibold">Programming Languages:</span> Python, SQL, Java, HTML/CSS, R
+              </li>
+              <li>
+                <span class="font-semibold">Tools:</span> MongoDB, Pandas, TensorFlow, Numpy, Flask, AWS S3,
+                FastAPI
+              </li>
+              <li>
+                <span class="font-semibold">Data Science Skills:</span> Data Pipeline Development, Feature
+                Engineering, Data Warehousing, AI Use Cases, Reporting Practices, Time Series Analysis, Excel, API
+                integration
+              </li>
+            </ul>
+          </div>
+
+          <!-- Leadership & Awards -->
+          <div>
+            <h2 class="text-lg md:text-xl font-bold mb-3">Leadership & Awards</h2>
+            <ul class="list-none text-xs md:text-sm space-y-1">
+              <li>Camellia Student Leadership Award, awarded by Wellesley College (May 2023)</li>
+              <li>Wellesley College Honor Code Council Deputy Chief Justice (Sep. 2022 – May 2023)</li>
+              <li>OTHER: MIT SHPE, Wellesley Engineering Society, Wellesley CS Club</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    // Theme Toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    const sunIcon = themeToggle.querySelector('.sun');
+    const moonIcon = themeToggle.querySelector('.moon');
+    const html = document.documentElement;
+
+    // Check for saved theme preference or use system preference
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      html.classList.add('dark');
+      sunIcon.classList.add('hidden');
+      moonIcon.classList.remove('hidden');
+    } else {
+      html.classList.remove('dark');
+      sunIcon.classList.remove('hidden');
+      moonIcon.classList.add('hidden');
+    }
+
+    // Theme toggle functionality
+    themeToggle.addEventListener('click', () => {
+      html.classList.toggle('dark');
+      const isDark = html.classList.contains('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      
+      if (isDark) {
+        sunIcon.classList.add('hidden');
+        moonIcon.classList.remove('hidden');
+      } else {
+        sunIcon.classList.remove('hidden');
+        moonIcon.classList.add('hidden');
+      }
+    });
+  </script>
+</body>
+</html>

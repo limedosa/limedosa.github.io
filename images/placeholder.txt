@@ -1,0 +1,2 @@
+Create a folder named "images" and place your profile picture and project images here.
+Rename your profile picture to "profile.png".
