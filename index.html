@@ -413,7 +413,7 @@
                 related topics.
               </p>
               <p>
-                Currently, I'm an AI Engineer at Jefferies Group LLC, where I'm partnering with the CTO and
+                Currently, I'm an AI Engineer at Jefferies Group LLC contracted through Widenet AI (an AI consulting company), where I'm partnering with the CTO and
                 engineering team to design and develop document extraction systems. I'm leveraging my skills in
                 TypeScript, React, and machine learning to build robust UI and backend components while optimizing
                 system performance and automating document processing workflows.
@@ -736,7 +736,13 @@
             Get in Touch
           </h2>
           <div class="card p-3 md:p-6 transition-all duration-300 hover:shadow-md">
-            <form id="contact-form" class="space-y-3 md:space-y-4">
+            <!-- Success message (hidden by default) -->
+            <div id="success-message" class="hidden mb-6 p-4 bg-primary/10 text-primary rounded" aria-live="polite">
+              Thanks for your message! I'll get back to you soon.
+            </div>
+            
+            <!-- Form using Formspree -->
+            <form id="contact-form" action="https://formspree.io/f/mdkgzzed" method="POST" class="space-y-3 md:space-y-4">
               <div>
                 <label for="name" class="block text-xs md:text-sm font-medium mb-1 md:mb-2">Name</label>
                 <input
@@ -766,6 +772,10 @@
                   required
                 ></textarea>
               </div>
+              
+              <!-- Anti-spam honeypot field (invisible to users) -->
+              <input type="text" name="_gotcha" style="display:none" />
+              
               <div class="flex flex-col sm:flex-row gap-3">
                 <button
                   type="submit"
@@ -782,7 +792,6 @@
                   Email Directly
                 </a>
               </div>
-              <div id="form-message" class="text-center mt-4 hidden"></div>
             </form>
           </div>
         </div>
@@ -987,7 +996,7 @@
 
     // Typewriter effect
     const typewriterText = document.getElementById('typewriter-text');
-    const phrases = ['Linda Dominguez', 'AI Engineer', 'ML Specialist', 'Full Stack Developer'];
+    const phrases = ['Linda Dominguez', 'AI Engineer', 'Data Scientist', 'Full Stack Developer'];
     let phraseIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -1071,30 +1080,58 @@
       });
     });
 
-    // Contact form
-    const contactForm = document.getElementById('contact-form');
-    const formMessage = document.getElementById('form-message');
-
-    contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
+    // Contact form handling with Formspree
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.getElementById('contact-form');
+      const successMessage = document.getElementById('success-message');
       
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const message = document.getElementById('message').value;
-      
-      // In a real implementation, you would send this data to a server
-      // For demo purposes, we'll just show a success message
-      formMessage.textContent = `Thanks for your message, ${name}! I'll get back to you soon.`;
-      formMessage.classList.remove('hidden');
-      formMessage.classList.add('text-green-500');
-      
-      // Clear the form
-      contactForm.reset();
-      
-      // Hide the message after 5 seconds
-      setTimeout(() => {
-        formMessage.classList.add('hidden');
-      }, 5000);
+      if (form) {
+        form.addEventListener('submit', function(event) {
+          event.preventDefault();
+          
+          // Disable button and show loading state
+          const submitButton = form.querySelector('button[type="submit"]');
+          const originalButtonText = submitButton.innerHTML;
+          submitButton.disabled = true;
+          submitButton.innerHTML = '<svg class="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg> Sending...';
+          
+          // Collect form data
+          const formData = new FormData(form);
+          
+          // Send form data to Formspree
+          fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+              'Accept': 'application/json'
+            }
+          })
+          .then(response => {
+            if (response.ok) {
+              // Show success message
+              form.reset();
+              form.style.display = 'none';
+              successMessage.classList.remove('hidden');
+            } else {
+              // Handle errors
+              response.json().then(data => {
+                if (data && data.errors) {
+                  alert('Error: ' + data.errors.map(error => error.message).join(', '));
+                } else {
+                  alert('Oops! There was a problem submitting your form');
+                }
+                submitButton.disabled = false;
+                submitButton.innerHTML = originalButtonText;
+              });
+            }
+          })
+          .catch(error => {
+            alert('Oops! There was a problem submitting your form');
+            submitButton.disabled = false;
+            submitButton.innerHTML = originalButtonText;
+          });
+        });
+      }
     });
   </script>
 </body>
