@@ -408,27 +408,20 @@
             <h2 class="text-xl md:text-2xl font-bold mb-4 gradient-text">My Journey</h2>
             <div class="space-y-3 md:space-y-4 text-sm md:text-base text-muted-foreground">
               <p>
-                I'm a recent graduate from Wellesley College and cross-registered student at Massachusetts Institute
-                of Technology (MIT), where I studied Computer Science, Machine Learning, Data Science and Psychology
+                I'm a Wellesley College and MIT alum. I studied Computer Science, Machine Learning, Data Science and Psychology
                 related topics.
               </p>
               <p>
-                Currently, I'm an AI Engineer at Jefferies Group LLC contracted through Widenet AI (an AI consulting company), where I'm partnering with the CTO and
-                engineering team to design and develop document extraction systems. I'm leveraging my skills in
-                TypeScript, React, and machine learning to build robust UI and backend components while optimizing
-                system performance and automating document processing workflows.
+                Currently, I'm an AI Engineer at Jefferies Group LLC contracted through Widenet AI (an AI consulting company), where I'm 
+                designing and developing a document extraction system. I'm leveraging my skills in
+                TypeScript, React, and AI to build robust frontend and backend components while optimizing
+                system performance and automating document processing workflows. I am also focused on enhancing user experience through
+                effective UI design.
               </p>
               <p class="font-semibold text-foreground">
                 I'm actively seeking AI engineering opportunities in the fintech sector, where I can apply my
                 expertise in machine learning, data science, and software development to create innovative solutions
                 for complex financial challenges.
-              </p>
-              <p>
-                I embarked on my computer science journey when I discovered my unwavering passion for the
-                ever-growing field. The challenges presented through problem-solving exercises ignited my critical
-                thinking skills and affirmed my devotion to computer science. As I delved deeper into the subject,
-                my enthusiasm grew, allowing me to apply my knowledge to real-world problems and craft innovative
-                solutions.
               </p>
             </div>
           </div>
@@ -568,7 +561,7 @@
           Projects
         </h2>
         <div class="grid gap-4 sm:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-          <!-- Project Cards -->
+          <!-- UFC Fight Tracker -->
           <div class="card project-card overflow-hidden h-full flex flex-col">
             <div class="relative aspect-video overflow-hidden group">
               <img src="images/ufc-project.jpg" alt="UFC Fight Tracker" class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110">
@@ -579,12 +572,14 @@
                 Prediction Bet – UFC Fight Tracker
               </h3>
               <p class="text-xs md:text-sm text-muted-foreground mb-3 md:mb-4 line-clamp-3">
-                A full-stack web application that predicts UFC fight outcomes by combining real-time betting odds with sentiment analysis from Twitter and Reddit.
+                A full-stack web application that predicts UFC fight outcomes by combining real-time betting odds with sentiment analysis from Twitter and Reddit. Uses machine learning to flag mismatches between public sentiment and market odds.
               </p>
               <div class="flex flex-wrap gap-1 md:gap-2">
                 <span class="inline-flex items-center rounded-md bg-primary/10 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">React</span>
                 <span class="inline-flex items-center rounded-md bg-primary/10 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">FastAPI</span>
                 <span class="inline-flex items-center rounded-md bg-primary/10 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">MongoDB</span>
+                <span class="inline-flex items-center rounded-md bg-primary/10 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">Python</span>
+                <span class="inline-flex items-center rounded-md bg-primary/10 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">VADER</span>
               </div>
             </div>
             <div class="p-3 md:p-4 pt-0 flex justify-between mt-auto">
@@ -595,7 +590,203 @@
             </div>
           </div>
 
-          <!-- More project cards would go here -->
+          <!-- Ensemble Training Framework -->
+          <div class="card project-card overflow-hidden h-full flex flex-col">
+            <div class="relative aspect-video overflow-hidden group">
+              <img src="images/ensemble-project.jpg" alt="Ensemble Training Framework" class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110">
+              <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            <div class="p-3 md:p-4 flex-grow">
+              <h3 class="font-semibold text-base md:text-lg lg:text-xl mb-2 gradient-text">
+                Low-cost Ensemble Training Framework
+              </h3>
+              <p class="text-xs md:text-sm text-muted-foreground mb-3 md:mb-4 line-clamp-3">
+                Developed a low-cost ensemble framework for CIFAR-10, using pruning, BatchEnsemble, and distillation to reduce training time and memory usage while maintaining high accuracy.
+              </p>
+              <div class="flex flex-wrap gap-1 md:gap-2">
+                <span class="inline-flex items-center rounded-md bg-primary/10 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">PyTorch</span>
+                <span class="inline-flex items-center rounded-md bg-primary/10 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">CIFAR-10</span>
+                <span class="inline-flex items-center rounded-md bg-primary/10 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">Ensemble Learning</span>
+                <span class="inline-flex items-center rounded-md bg-primary/10 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">Model Pruning</span>
+              </div>
+            </div>
+            <div class="p-3 md:p-4 pt-0 flex justify-between mt-auto">
+              <a href="https://github.com/limedosa/ensemble-training" target="_blank" class="inline-flex items-center gap-1 md:gap-2 text-xs md:text-sm hover:underline hover:text-primary transition-colors duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <!-- Sentiment Analysis on Cryptocurrency -->
+          <div class="card project-card overflow-hidden h-full flex flex-col">
+            <div class="relative aspect-video overflow-hidden group">
+              <img src="images/crypto-project.jpg" alt="Crypto Sentiment Analysis" class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110">
+              <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            <div class="p-3 md:p-4 flex-grow">
+              <h3 class="font-semibold text-base md:text-lg lg:text-xl mb-2 gradient-text">
+                Sentiment Analysis on Cryptocurrency
+              </h3>
+              <p class="text-xs md:text-sm text-muted-foreground mb-3 md:mb-4 line-clamp-3">
+                Developed LSTM & GRU models for Bitcoin price prediction using tweet sentiment & historical data. Used Alpaca API & NLTK for data extraction and sentiment analysis.
+              </p>
+              <div class="flex flex-wrap gap-1 md:gap-2">
+                <span class="inline-flex items-center rounded-md bg-primary/10 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">LSTM</span>
+                <span class="inline-flex items-center rounded-md bg-primary/10 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">GRU</span>
+                <span class="inline-flex items-center rounded-md bg-primary/10 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">NLP</span>
+                <span class="inline-flex items-center rounded-md bg-primary/10 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">Alpaca API</span>
+                <span class="inline-flex items-center rounded-md bg-primary/10 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">NLTK</span>
+              </div>
+            </div>
+            <div class="p-3 md:p-4 pt-0 flex justify-between mt-auto">
+              <a href="https://github.com/limedosa/Crypto-Sentiment" target="_blank" class="inline-flex items-center gap-1 md:gap-2 text-xs md:text-sm hover:underline hover:text-primary transition-colors duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <!-- NY Botanical Gardens Classification -->
+          <div class="card project-card overflow-hidden h-full flex flex-col">
+            <div class="relative aspect-video overflow-hidden group">
+              <img src="images/botanical-project.jpg" alt="NY Botanical Gardens Classification" class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110">
+              <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            <div class="p-3 md:p-4 flex-grow">
+              <h3 class="font-semibold text-base md:text-lg lg:text-xl mb-2 gradient-text">
+                NY Botanical Gardens Classification
+              </h3>
+              <p class="text-xs md:text-sm text-muted-foreground mb-3 md:mb-4 line-clamp-3">
+                Built a multicategorical ResNet101V2 model to categorize 120,000+ images belonging to 10 classes of plant & animal specimen, with 97% accuracy. Ranked top 15 out of 75+ national teams.
+              </p>
+              <div class="flex flex-wrap gap-1 md:gap-2">
+                <span class="inline-flex items-center rounded-md bg-primary/10 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">ResNet101V2</span>
+                <span class="inline-flex items-center rounded-md bg-primary/10 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">TensorFlow</span>
+                <span class="inline-flex items-center rounded-md bg-primary/10 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">Keras</span>
+                <span class="inline-flex items-center rounded-md bg-primary/10 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">Numpy</span>
+              </div>
+            </div>
+            <div class="p-3 md:p-4 pt-0 flex justify-between mt-auto">
+              <a href="https://github.com/limedosa/New-York-Botanical-Gardens-Image-Classification/blob/main/NYBG_Image_Classification.ipynb" target="_blank" class="inline-flex items-center gap-1 md:gap-2 text-xs md:text-sm hover:underline hover:text-primary transition-colors duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <!-- HealthAssess: AI Health Tool -->
+          <div class="card project-card overflow-hidden h-full flex flex-col">
+            <div class="relative aspect-video overflow-hidden group">
+              <img src="images/health-project.jpg" alt="HealthAssess: AI Health Tool" class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110">
+              <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            <div class="p-3 md:p-4 flex-grow">
+              <h3 class="font-semibold text-base md:text-lg lg:text-xl mb-2 gradient-text">
+                HealthAssess: AI Health Tool
+              </h3>
+              <p class="text-xs md:text-sm text-muted-foreground mb-3 md:mb-4 line-clamp-3">
+                Developed web-based AI health assessment tool using live heart rate data, integrating GPT-4 API for real-time analysis & prediction. Designed for MakeHarvard 2024 AI competition.
+              </p>
+              <div class="flex flex-wrap gap-1 md:gap-2">
+                <span class="inline-flex items-center rounded-md bg-primary/10 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">Flask</span>
+                <span class="inline-flex items-center rounded-md bg-primary/10 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">GPT-4 API</span>
+                <span class="inline-flex items-center rounded-md bg-primary/10 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">Healthcare</span>
+                <span class="inline-flex items-center rounded-md bg-primary/10 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">Python</span>
+              </div>
+            </div>
+            <div class="p-3 md:p-4 pt-0 flex justify-between mt-auto">
+              <a href="https://github.com/limedosa/Health-Assess-MakeHavard24" target="_blank" class="inline-flex items-center gap-1 md:gap-2 text-xs md:text-sm hover:underline hover:text-primary transition-colors duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <!-- Bat Population Predictive Model -->
+          <div class="card project-card overflow-hidden h-full flex flex-col">
+            <div class="relative aspect-video overflow-hidden group">
+              <img src="images/bat-project.jpg" alt="Bat Population Predictive Model" class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110">
+              <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            <div class="p-3 md:p-4 flex-grow">
+              <h3 class="font-semibold text-base md:text-lg lg:text-xl mb-2 gradient-text">
+                Bat Population Predictive Model
+              </h3>
+              <p class="text-xs md:text-sm text-muted-foreground mb-3 md:mb-4 line-clamp-3">
+                Found, standardized, and merged 3 bat population datasets. Built random forest & NLP to predict bat population decline (97% accuracy) using timestamp & geolocation data.
+              </p>
+              <div class="flex flex-wrap gap-1 md:gap-2">
+                <span class="inline-flex items-center rounded-md bg-primary/10 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">Random Forest</span>
+                <span class="inline-flex items-center rounded-md bg-primary/10 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">NLP</span>
+                <span class="inline-flex items-center rounded-md bg-primary/10 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">Tokenizer</span>
+                <span class="inline-flex items-center rounded-md bg-primary/10 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">Geographical Data</span>
+              </div>
+            </div>
+            <div class="p-3 md:p-4 pt-0 flex justify-between mt-auto">
+              <a href="https://github.com/limedosa/Bat-Population-Decline/blob/main/Bat%20Population%20Decline.ipynb" target="_blank" class="inline-flex items-center gap-1 md:gap-2 text-xs md:text-sm hover:underline hover:text-primary transition-colors duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <!-- Cryptocurrency Price Prediction -->
+          <div class="card project-card overflow-hidden h-full flex flex-col">
+            <div class="relative aspect-video overflow-hidden group">
+              <img src="images/crypto-price-project.jpg" alt="Cryptocurrency Price Prediction" class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110">
+              <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            <div class="p-3 md:p-4 flex-grow">
+              <h3 class="font-semibold text-base md:text-lg lg:text-xl mb-2 gradient-text">
+                Cryptocurrency Price Prediction
+              </h3>
+              <p class="text-xs md:text-sm text-muted-foreground mb-3 md:mb-4 line-clamp-3">
+                Trained multiple classification models (SGD, XGBoost, Random Forest, SVM, KNN) to predict cryptocurrency types, achieving up to 99.51% accuracy.
+              </p>
+              <div class="flex flex-wrap gap-1 md:gap-2">
+                <span class="inline-flex items-center rounded-md bg-primary/10 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">Alpaca API</span>
+                <span class="inline-flex items-center rounded-md bg-primary/10 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">SGD</span>
+                <span class="inline-flex items-center rounded-md bg-primary/10 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">Random Forest</span>
+                <span class="inline-flex items-center rounded-md bg-primary/10 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">XGBClassifier</span>
+                <span class="inline-flex items-center rounded-md bg-primary/10 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">Scikit-learn</span>
+              </div>
+            </div>
+            <div class="p-3 md:p-4 pt-0 flex justify-between mt-auto">
+              <a href="https://github.com/limedosa/Cryptocurrency-Price-Prediction/blob/main/Cryptocurrency_Price_Prediction.ipynb" target="_blank" class="inline-flex items-center gap-1 md:gap-2 text-xs md:text-sm hover:underline hover:text-primary transition-colors duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <!-- Cleaning Website Contract -->
+          <div class="card project-card overflow-hidden h-full flex flex-col">
+            <div class="relative aspect-video overflow-hidden group">
+              <img src="images/cleaning-project.jpg" alt="Cleaning Website Contract" class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110">
+              <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            <div class="p-3 md:p-4 flex-grow">
+              <h3 class="font-semibold text-base md:text-lg lg:text-xl mb-2 gradient-text">
+                Cleaning Website Contract
+              </h3>
+              <p class="text-xs md:text-sm text-muted-foreground mb-3 md:mb-4 line-clamp-3">
+                Hired to create a cleaning website for a cleaning company in Manhattan. Helped business grow and gain customers.
+              </p>
+              <div class="flex flex-wrap gap-1 md:gap-2">
+                <span class="inline-flex items-center rounded-md bg-primary/10 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">Bootstrap</span>
+                <span class="inline-flex items-center rounded-md bg-primary/10 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">JavaScript</span>
+                <span class="inline-flex items-center rounded-md bg-primary/10 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">HTML/CSS</span>
+                <span class="inline-flex items-center rounded-md bg-primary/10 px-1.5 py-0.5 md:px-2 md:py-1 text-[10px] md:text-xs font-medium text-primary ring-1 ring-inset ring-primary/20">Web Development</span>
+              </div>
+            </div>
+            <div class="p-3 md:p-4 pt-0 flex justify-between mt-auto">
+              <a href="https://wendys-cleaning.glitch.me/index.html" target="_blank" class="inline-flex items-center gap-1 md:gap-2 text-xs md:text-sm hover:underline hover:text-primary transition-colors duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Demo
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
